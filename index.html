@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body class="main">
+    <div  class="block">
+        <div>
+            <table>
+                <tr>
+                    <td><h4>Enter amount:</h4></td>
+                    <td></td>
+                    <td><h4>KZT (tenge)</h4></td>
+                    <td><h4>USD (dollar)</h4></td>
+                    <td><h4>EUR (euro)</h4></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" id="amount" oninput="calculate(this.value)">
+                        <select id="currency" onchange="calculate(document.getElementById('amount').value)">
+                            <option value="KZT">KZT</option>
+                            <option value="USD">USD</option>
+                            <option value="EUR">EUR</option>
+                        </select>
+                    </td>
+                    <td></td>
+                    <td class="output-text-kzt" id="output-kzt">-</td>
+                    <td class="output-text-usd" id="output-usd">-</td>
+                    <td class="output-text-eur" id="output-eur">-</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
